@@ -1,177 +1,162 @@
-# 🐧 Script de Backup Automático para Linux (Versión Gratuita)
+# 🛡️ backup_linux.sh — Backup Automático Gratis para Linux
 
-📌 **Autor**: Ronald José Marrero Medina (@osomar357)  
+📌 **Autor**: Ronald José Marrero Medina — [@osomar357](https://github.com/osomar357)  
 📌 **Descripción**:  
-Script ligero y seguro para respaldar automáticamente tus carpetas más importantes (Documentos, Proyectos, Configuraciones) en formato comprimido `.tar.gz`.
+Este script automatiza copias de seguridad diarias de tus carpetas más importantes (`Documentos`, `Proyectos`, `Configuraciones`) en formato `.tar.gz`.  
+Ideal para principiantes que quieren proteger sus archivos sin complicaciones.
+
+> 💡 **¿Quieres más?** → Usa la **versión PRO** con alertas por Telegram, copia remota y limpieza automática:  
+> 👉 [Ver Versión PRO Full](https://github.com/osomar/backup_automatico.sh)  
+> 👉 [Ver Versión PRO Flexible](https://github.com/osomar/backup_flexible_arg.sh)
 
 ---
 
-## 🚀 Características
+## ⚙️ Requisitos
 
-✅ Backup automático de múltiples directorios  
-✅ Exclusión inteligente de cachés y archivos temporales (`Cache`, `cache`, `History`)  
-✅ Logs detallados con fecha y hora  
-✅ Fácil de automatizar con `cron`
-
----
-
-## 🛠️ Requisitos
-
-- Linux (Ubuntu/Debian probado)
-- Bash
-- Espacio en disco
+- Linux (Ubuntu/Debian probado)  
+- Bash  
+- Espacio en disco suficiente  
 
 ---
 
-## 📥 Instalación y Uso
+## 🚀 Cómo usarlo (Gratis)
 
-1. Descarga el script: `backup_script.sh`
-2. Hazlo ejecutable:  
+1. Descarga el script:
    ```bash
-   chmod +x backup_script.sh
+   wget https://raw.githubusercontent.com/osomar/linux-auto-backup.sh/main/backup_linux.sh
 
----
 
-# Ejecútalo:
+# Edita las rutas si quieres (opcional):
 
-./backup_script.sh
+.../Bash
 
----
+nano backup_linux.sh
 
-# Programa backups diarios:
+Por defecto ya respalda:
+~/Documentos ~/Proyectos ~/.config 
+Pero puedes elegir la ruta de los directorios que deseas guardar.
 
-# Abre el editor de cron
+# Hazlo ejecutable:
+
+.../Bash
+
+chmod +x backup_linux.sh
+
+
+# Ejecútalo para probar:
+
+.../Bash
+
+./backup_linux.sh
+
+Tus backups se guardarán en ~/backups/ con logs en ~/backups/backup.log.
+
+# Automatízalo (copia diaria a las 2:00 AM):
+
+.../Bash
+
 crontab -e
 
-# Ejemplo: backup diario a las 2 AM
-0 2 * * * /ruta/completa/a/backup_script.sh
+
+.../Bash
+
+0 2 * * * /ruta/completa/a/backup_linux.sh
 
 ---
 
-💡 **¿Necesitas más?**  
+#Nota importante:
 
-💰 **Versión PRO — $99 USDT**
+Este script no incluye:
 
-Elige tu modalidad:
+Copia remota (SSH/Rclone/FTP)
+Alertas por Telegram
+Limpieza automática de backups antiguos
+Soporte técnico
+👉 Si necesitas esas funciones, la versión PRO te espera:
+🔗 Versión PRO Full — Automática
+🔗 Versión PRO Flexible — Control Total
 
-🔹 **PRO Automático** → Instala, programa en cron, y ¡listo! Funciona solo.  
-🔹 **PRO Flexible** → Control total: ejecuta `backup`, `cleanup`, o `full` cuando quieras.
+--- 
 
-✅ Ambas incluyen:  
-- Copia a servidor remoto (SSH/Rclone/FTP)  
-- Alertas por Telegram  
-- Limpieza automática (+30 días)  
-- Soporte 14 días  
-- Guía de Autonomía paso a paso
-
-🔥 ¡10% de descuento si pagas con Hive, HBD, Leo, Hueso, BBH o BBHO! 
+# In English:
 
 ---
 
-💱 **Métodos de Pago Flexibles — Sin Barreras Geográficas**
+# 🛡️ backup_linux.sh - Free Automatic Backup for Linux
 
-Puedes realizar tu pago con criptomonedas aceptadas por Binance, PayPal y Rublos.  
-*(Próximamente: Yuan chino — ¡la moneda del futuro!)*
-
-✅ Ideal para países sancionados o con acceso limitado a USD.  
-✅ Sin intermediarios, sin restricciones.  
-✅ Paga con lo que tengas — yo me adapto a ti.
-
----
-
-🔥 ¡10% de descuento si pagas con Hive, HBD, Leo, Hueso BBH o BBHO!
-
-📬 **¿Listo para automatizar tus backups sin preocupaciones?**  
-¡Escríbeme hoy y obtén tu Versión PRO con 10% de descuento! 📩 ronaldmarrerom1967@gmail.com
-
----
-
-# In English: 
-
----
-
-# 🐧 Automatic Backup Script for Linux (Free Version)
-
-📌**Author**: Ronald José Marrero Medina (@osomar357)  
+📌**Author**: Ronald José Marrero Medina — [@osomar357](https://github.com/osomar357 )  
 📌**Description**:  
-Lightweight and secure script to automatically backup your most important folders (Documents, Projects, Settings) in compressed format`.tar.gz`.
+This script automates daily backups of your most important folders (`Documents`, `Projects`, `Settings`) in format'.tar.gz`.  
+Ideal for beginners who want to protect their files without complications.
 
----
-
-## 🚀 Features
-
-✅ Automatic backup of multiple directories  
-✅ Intelligent exclusion of caches and temporary files ('Cache`, 'cache`, 'History`)  
-✅ Detailed logs with date and time  
-✅ Easy to automate with 'cron`
+> 💡**Do you want more?**→ Use the **PRO version** with Telegram alerts, remote copy and automatic cleaning:  
+> 👉 [View Full PRO Version](https://github.com/osomar/backup_automatico.sh )  
+> 👉 [See Flexible PRO Version](https://github.com/osomar/backup_flexible_arg.sh )
 
 ---
 
 ##️️ Requirements
 
-- Linux (Ubuntu/Debian tested)
-- Bash
-- Disk space
+- Linux (Ubuntu/Debian tested)  
+- Bash  
+- Enough disk space  
 
 ---
 
-## 📥 Installation and Use
+## 🚀 How to Use It (For free)
 
-1. Download the script: `backup_script.sh `
-2. Make it executable:  
+1. Download the script:
    "'bash
-   chmod +x backup_script.sh
+   wget https://raw.githubusercontent.com/osomar/linux-auto-backup.sh/main/backup_linux.sh
 
----
 
-# Execute it:
+# Edit the routes if you want (optional):
 
-./backup_script.sh
+.../Bash
 
----
+nano backup_linux.sh
 
-# Daily backups program:
+By default it already supports:
+~/Documents ~/Projects ~/.config 
+But you can choose the path of the directories you want to save.
 
-# Open the cron editor
+# Make it executable:
+
+.../Bash
+
+chmod +x backup_linux.sh
+
+
+# Run it to test:
+
+.../Bash
+
+./backup_linux.sh
+
+Your backups will be saved in ~/backups/ with logs in ~/backups/backup.log.
+
+# Automate it (daily copy at 2:00 AM):
+
+.../Bash
+
 crontab -e
 
-# Example: daily backup at 2 AM
-0 2 * * * /ruta/completa/a/backup_script.sh
+
+.../Bash
+
+0 2 * * * /ruta/completa/a/backup_linux.sh
 
 ---
 
-💡**Do you need more?**  
+#Important note:
 
-💰**PRO Version — $99 USDT**
+This script does not include:
 
-Choose your modality:
+Remote copy (SSH/Rclone/FTP)
+Alerts by Telegram
+Automatic cleaning of old backups
+Technical support
+👉 If you need those features, the PRO version is waiting for you:
+🔗 Full—Automatic PRO Version
+🔗 Flexible PRO Version - Full Control
 
-🔹**Automatic PRO** → Install, program in cron, and voila! It works by itself.  
-🔹**PRO Flexible** → Full Control: run 'backup`, 'cleanup`, or 'full' whenever you want.
-
-✅ Both include:  
-- Copy to remote server (SSH/Rclone/FTP)  
-- Alerts by Telegram  
-- Automatic cleaning (+30 days)  
-- 14 days support  
-- Step-by-step Autonomy guide
-
-🔥10% discount if you pay with Hive, HBD, Leo, Bone, BBH or BBHO! 
-
----
-
-💱** Flexible Payment Methods - Without Geographical Barriers**
-
-You can make your payment with cryptocurrencies accepted by Binance, PayPal and Rubles.  
-*(Coming soon: Chinese Yuan — the currency of the future!)*
-
-✅ Ideal for sanctioned countries or with limited access to USD.  
-✅ No intermediaries, no restrictions.  
-✅ Pay with what you have — I adapt to you.
-
----
-
-🔥10% discount if you pay with Hive, HBD, Leo, BBH Bone or BBHO!
-
-📬**Ready to automate your backups without worries?**  
-Write to me today and get your PRO Version with 10% discount! 📩 ronaldmarrerom1967@gmail.com
